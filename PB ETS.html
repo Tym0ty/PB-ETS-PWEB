@@ -1,255 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>PB ETS PWEB</title>
-    <script src="./indexpoke.js"></script>
-  </head>
-  <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    
-    <div class="row">
-
-        <div class="col-xl-3 col-md-3 mb-4 col-6">
-            <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-                <div class="card-body">
-                    <div class="text-center">
-                        <div id="Bulbasaur" style="padding-bottom: 5px;">Bulbasaur</div>
-                        <button type="button" class="btn btn-primary" onclick="showUrl('bulbasaur')">Detail</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-
-        <div class="col-xl-3 col-md-3 mb-4 col-6">
-            <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-                <div class="card-body">
-                    <div class="text-center">
-                        <div id="ivysaur" style="padding-bottom: 5px;">Ivysaur</div>
-                        <button type="button" class="btn btn-primary" onclick="showUrl('ivysaur')">Detail</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-3 col-md-3 mb-4 col-6">
-            <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-                <div class="card-body">
-                    <div class="text-center">
-                        <div id="venusaur" style="padding-bottom: 5px;">Venusaur</div>
-                        <button type="button" class="btn btn-primary" onclick="showUrl('venusaur')">Detail</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-3 col-md-3 mb-4 col-6">
-            <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-                <div class="card-body">
-                    <div class="text-center">
-                        <div id="charmander" style="padding-bottom: 5px;">Charmander</div>
-                        <button type="button" class="btn btn-primary" onclick="showUrl('charmander')">Detail</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-  </div>
-
-  <div class = "row">
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="charmeleon" style="padding-bottom: 5px;">Charmeleon</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('charmeleon')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="charizard" style="padding-bottom: 5px;">Charizard</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('charizard')">Detail</button>
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>PB PWEB ETS</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="pokemon_card">
         </div>
     </div>
 
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="squirtle" style="padding-bottom: 5px;">Squirtle</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('squirtle')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="wartortle" style="padding-bottom: 5px;">Wartortle</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('wartortle')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class = "row">
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="Blastoise" style="padding-bottom: 5px;">Blastoise</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('Blastoise')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="caterpie" style="padding-bottom: 5px;">Caterpie</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('caterpie')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="Metapod" style="padding-bottom: 5px;">Metapod</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('Metapod')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="butterfree" style="padding-bottom: 5px;">Butterfree</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('butterfree')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class = "row">
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="Weedle" style="padding-bottom: 5px;">Weedle</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('Weedle')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="kakuna" style="padding-bottom: 5px;">Kakuna</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('kakuna')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="Beedril" style="padding-bottom: 5px;">Beedril</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('Beedril')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="Pidgey" style="padding-bottom: 5px;">Pidgey</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('Pidgey')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class = "row">
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="Pidgeotto" style="padding-bottom: 5px;">Pidgeotto</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('Pidgeotto')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="Pidgeot" style="padding-bottom: 5px;">Pidgeot</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('Pidgeot')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="Rattata" style="padding-bottom: 5px;">Rattata</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('Rattata')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-3 col-md-3 mb-4 col-6">
-        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
-            <div class="card-body">
-                <div class="text-center">
-                    <div id="Raticate" style="padding-bottom: 5px;">Raticate</div>
-                    <button type="button" class="btn btn-primary" onclick="showUrl('Raticate')">Detail</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://pokeapi.co/api/v2/pokemon?limit=100&offset=0', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    const data = JSON.parse(xhr.responseText);
+                    const cardContainer = document.getElementById('pokemon_card');
+                    data.results.forEach(pokemon => {
+                        const card = document.createElement('div');
+                        card.className = 'col-xl-3 col-md-3 mb-4 col-6';
+                        card.innerHTML = `
+                        <div class="card border-left-primary shadow h-100 py-2" style="border: 1px solid blue">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <h5 class="card-title" style = "padding-bottom: 5px;">${pokemon.name}</h5>
+                                <a href="${pokemon.url}" class="btn btn-primary" target="_blank">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        `;
+                        cardContainer.appendChild(card);
+                    });
+                } 
+            }
+        };
+        xhr.send();
+    </script>
 </body>
 </html>
